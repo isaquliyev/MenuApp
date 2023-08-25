@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple">#4A4A6A</color>
+    <color name="orange">#FF7B2C</color>
+    
+    // Onboarding fragment
+    <color name="onboardingTextColor">#32324D</color>
+    <color name="lightPurple">#8981AE</color>
+    <color name="getStartedButtonColor">#615793</color>
+    
+    
+    // Authentication fragment
+    <color name="authTextColor">#8E8EA9</color>
+    <color name="grey">#A5A5BA</color>
+    
+    
+</resources>

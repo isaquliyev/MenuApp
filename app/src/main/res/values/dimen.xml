@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d_39">39dp</dimen>
+    <dimen name="d_42">42dp</dimen>
+    <dimen name="d_14">14dp</dimen>
+    <dimen name="d_24">24dp</dimen>
+    <dimen name="d_16">16dp</dimen>
+    <dimen name="d_36">36dp</dimen>
+    <dimen name="d_26">26dp</dimen>
+    <dimen name="d_32">32dp</dimen>
+    <dimen name="d_432">432dp</dimen>
+    <dimen name="d_145">145dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_18">18dp</dimen>
+
+    // Text Size
+    <dimen name="s_60">60sp</dimen>
+    <dimen name="s_26">26sp</dimen>
+    <dimen name="s_16">16sp</dimen>
+</resources>

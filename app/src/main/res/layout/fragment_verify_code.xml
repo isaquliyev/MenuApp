@@ -1,14 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.VerifyCodeFragment">
+    android:paddingStart="@dimen/d_24"
+    android:paddingEnd="@dimen/d_24"
+    android:paddingBottom="@dimen/d_25"
+    tools:context=".ui.fragments.VerifyCodeFragment"
+    android:background="@color/bgColor">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_40"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:itemBackground="@drawable/opt_shape"
+        app:itemRadius="@dimen/d_10"
+        app:itemSpacing="@dimen/d_29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:lineColor="@color/bgColor" />
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@drawable/arrow_left_shape"
+        android:elevation="@dimen/d_2"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_12"
+        android:fontFamily="@font/dmsans_medium"
+        android:text="@string/verifyCode"
+        android:textAlignment="center"
+        android:textColor="@color/onboardingTextColor"
+        android:textSize="@dimen/s_22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        app:lineHeight="@dimen/s_30" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_14"
+        android:fontFamily="@font/mulish_medium"
+        android:paddingStart="@dimen/d_24"
+        android:paddingEnd="@dimen/d_24"
+        android:text="@string/weJustSend"
+        android:textAlignment="center"
+        android:textColor="@color/authTextColor"
+        android:textSize="@dimen/s_16"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:lineHeight="@dimen/s_28" />
+
+    <TextView
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/get_started_shape"
+        android:fontFamily="@font/mulish_medium"
+        android:text="@string/next"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_22"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinView">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/didntRecieveCode"
+            android:textColor="@color/authTextColor"
+            android:textSize="@dimen/s_16"
+            app:lineHeight="@dimen/s_28" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/resendCode"
+            android:textColor="@color/resendCode"
+            android:textSize="@dimen/s_16" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

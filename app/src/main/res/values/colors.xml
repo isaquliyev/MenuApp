@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="bgColor">#EAEAEF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
@@ -15,6 +17,8 @@
     // Authentication fragment
     <color name="authTextColor">#8E8EA9</color>
     <color name="grey">#A5A5BA</color>
+
+    <color name="resendCode">#FFB01D</color>
     
     
 </resources>

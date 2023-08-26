@@ -50,5 +50,14 @@ dependencies {
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Dots Indicator
     implementation("com.tbuonomo:dotsindicator:5.0")
+
+
+    // Country Code picker
+    implementation 'com.hbb20:ccp:2.5.1'
+
+    // SMS verification Edit Text
+    implementation 'io.github.chaosleung:pinview:1.4.4'
 }

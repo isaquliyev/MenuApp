@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.indices
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.isaquliyev.menuapp24_08.R
@@ -17,6 +19,7 @@ import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 class OnboardingFragment : Fragment() {
 
     private lateinit var binding : FragmentOnboardingBinding
+    private lateinit var navController: NavController
 
 
     override fun onCreateView(
@@ -31,12 +34,18 @@ class OnboardingFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var indicator : DotsIndicator = binding.indicator
-        var viewAdapter : ViewAdapter = ViewAdapter(requireContext())
+        val indicator : DotsIndicator = binding.indicator
+        val viewAdapter : ViewAdapter = ViewAdapter(requireContext())
         val viewPager : ViewPager = binding.viewPager
 
         viewPager.adapter = viewAdapter
         indicator.setViewPager(viewPager)
+
+        navController = Navigation.findNavController(view)
+
+        binding.getStartedButton.setOnClickListener {
+            navController.navigate(R.id.action_onboardingFragment_to_authenticationFragment)
+        }
     }
 
 }

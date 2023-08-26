@@ -14,4 +14,25 @@
     // Auth Fragment
     <string name="letsGetStarted">Let’s Get Started 😁</string>
     <string name="signUpOrLogin">Sign up or login into to have a full digital experience in our restaurant</string>
+    <string name="continueWithFacebook">Continue with Facebook</string>
+    <string name="continueWithGmail">Continue with Gmail</string>
+    
+    // Email Verification
+    <string name="whatsYourEmail">What’s your email? 📨</string>
+    <string name="weNeedToSearch">We need it to search after your account or create a new one</string>
+    <string name="email">Email</string>
+    <string name="next">Next</string>
+
+    // Create Account
+    <string name="gettingStarted">Getting started! ✌️</string>
+    <string name="lookLikeYouAreNewUser">Look like you are new to us! Create an account for a complete experience.</string>
+    <string name="username">Username</string>
+    <string name="phoneNumber">Phone number</string>
+    <string name="password">Password</string>
+
+    // Verify Code
+    <string name="verifyCode">Verify Code ⚡️</string>
+    <string name="weJustSend">We just sent a 4-digit verification code to robert.fox@gmail.com. Enter the code in the box below to continue.</string>
+    <string name="didntRecieveCode">Didn’t receive a code? </string>
+    <string name="resendCode">Resend Code</string>
 </resources>
